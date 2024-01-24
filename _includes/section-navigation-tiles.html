@@ -59,6 +59,7 @@
 {%- unless include.sort == false %}
 {%- assign related_pages = related_pages | sort: 'title'%}
 {%- endunless %}
+related_pages: {{related_pages}}
 {%- unless related_pages.size == 0 %}
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-{{ include.col | default: 2 }} g-4 mb-5 navigation-tiles">
 {%- endunless %}
